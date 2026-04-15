@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="courses,leran,study">
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="responseve.css">
+
+    <title>PCO</title>
+    
+</head>
+<body> 
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <a href="index.html"><h1 class="logo">Personal Course Organizer</h1></a>
+                <ul class="nav-link">
+                    <li><a href="index.html" class="links ">Home</a></li>
+                    <li><a href="my-courses.html" class="links">My Courses</a></li>
+                    <li><a href="Add-coures.html" class="links active">Add Course</a></li>
+                    <li><a href="./contact-us.html" class="links">Contact Us</a></li>
+                </ul>
+                <div class="space"></div>
+            </div> 
+        </nav>
+    </header>
+        
+        <section class="add-course">
+            <div class="containerr">
+                <form>
+                    <div class="info">
+                        <div class="name-course">
+                            <p>Add Your Courses :</p>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="course-select">
+                            <h5>Slecet Your Course :</h5>
+                            <label class="radio-card">CSS
+                                <input type="radio" name="course" value="css">
+                            </label>
+                            
+                            <label>HTML
+                                <input type="radio" name="course" value="Html">
+                            </label>
+                            
+                            <label>JAVA SCRIPT
+                                <input type="radio" name="course" value="JS">
+                            </label>
+                            
+                            <label>C++
+                                <input type="radio" name="course" value="C++">
+                            </label>
+                        </div>
+                        <div class="level">
+                            <h5>Select Your Level :</h5>
+                            <label class="level-card">Beginner
+                                <input type="radio" name="level" value="Beginner">
+                            </label>
+                            
+                            <label class="level-card">Intermediate
+                                <input type="radio" name="level" value="Intermediate">
+                            </label>
+                            
+                            <label class="level-card">Advanced
+                                <input type="radio" name="level" value="Advanced">
+                            </label>
+                        </div>
+                        <div class="note">
+                            <input type="text" placeholder="Note">
+                        </div>
+                        
+                    </div>
+                    <button type="submit" >submit</button>
+                </form>
+                
+            </div>
+            
+        </section>
+        <footer>
+        <p>© 2026 Personal Course Organizer</p> 
+        <div class="social-links">
+        <i class="fa-brands fa-github-alt"><a href="#">GitHub</a></i> 
+        <i class="fa-brands fa-linkedin"><a href="#">LinkedIn</a></i>
+        </div>
+    </footer>
+</body>

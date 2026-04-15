@@ -1,0 +1,365 @@
+/* ===================================
+   RESPONSIVE CSS — Personal Course Organizer
+   Covers: courses, my-courses, add-course, contact-us
+   Breakpoints:
+     - Tablet:  max-width: 992px
+     - Mobile:  max-width: 768px
+     - Small:   max-width: 480px
+=================================== */
+
+
+/* ============ GLOBAL ============ */
+
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+    }
+
+    nav .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 16px;
+        gap: 10px;
+    }
+
+    nav .container-fluid h1 {
+        font-size: 22px;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav .container-fluid ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 3px 6px;
+        font-size: 15px;
+    }
+
+    nav .container-fluid .space {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .container-fluid h1 {
+        font-size: 17px;
+    }
+
+    nav ul li {
+        font-size: 13px;
+        margin: 2px 4px;
+    }
+}
+
+
+/* ============ HOME PAGE (courses.html) ============ */
+
+@media (max-width: 992px) {
+    header main .introduction h4 {
+        font-size: 75px;
+    }
+
+    header main .introduction p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    header main.container {
+        height: auto;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    
+    header main.container{
+        justify-content: center;
+        align-items: center;
+
+    }
+    header main .introduction {
+        margin-top: 40px;
+    }
+
+    header main .introduction h4 {
+        font-size: 55px;
+        padding: 12px 0;
+    }
+
+    header main .introduction p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .cta-button {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header main .introduction h4 {
+        font-size: 38px;
+    }
+
+    header main .introduction p {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .cta-button {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}
+
+
+/* ============ MY COURSES PAGE (my-courses.html) ============ */
+
+@media (max-width: 992px) {
+    .my-courses {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-courses {
+        /* grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 14px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .course-card {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .course-card h3 {
+        font-size: 17px;
+    }
+
+    .course-card p {
+        font-size: 14px;
+    }
+
+    .btn-details,
+    .close-btn {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+
+    .cnotant-del p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-courses {
+        grid-template-columns: 1fr;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .course-card {
+        padding: 14px;
+    }
+
+    .course-card h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* ============ ADD COURSE PAGE (Add-coures.html) ============ */
+
+@media (max-width: 992px) {
+    .add-course .containerr {
+        margin: 16px 20px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .add-course .containerr {
+        margin: 14px 14px;
+        padding: 16px;
+    }
+
+    .name-course p {
+        font-size: 24px;
+    }
+
+    .add-course .containerr h5 {
+        font-size: 19px;
+    }
+
+    .add-course .containerr label {
+        font-size: 15px;
+        display: inline-block;
+        margin: 4px 6px 4px 0;
+    }
+
+    .add-course .containerr .info input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    .add-course button {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .info .note input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-course .containerr {
+        margin: 10px;
+        padding: 14px;
+    }
+
+    .name-course p {
+        font-size: 20px;
+    }
+
+    .add-course .containerr h5 {
+        font-size: 17px;
+    }
+
+    .add-course .containerr label {
+        font-size: 14px;
+    }
+
+    .add-course .containerr .info input[type="text"] {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+
+/* ============ CONTACT US PAGE (contact-us.html) ============ */
+
+@media (max-width: 992px) {
+    .contact-us {
+        padding: 30px 40px;
+    }
+
+    .contact-us .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 24px 16px;
+        grid-template-rows: auto;
+    }
+
+    .contact-us .container-fluid {
+        width: 100%;
+        padding: 16px;
+        border-radius: 20px;
+        
+    }
+
+    .contact-us .container-fluid h4 {
+        font-size: 28px;
+    }
+
+    .contact-us .container-fluid h5 {
+        font-size: 19px;
+    }
+
+    .contact-us .container-fluid h6 {
+        font-size: 0.75rem;
+    }
+
+    .contact-us .container-fluid p.test {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .contact-us .container-fluid .carde-info {
+        padding: 12px 14px;
+        border-radius: 16px;
+    }
+
+    .contact-us P {
+        font-size: 14px;
+    }
+
+    .contact-us span {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .contact-us .links i {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 16px 10px;
+    }
+
+    .contact-us .container-fluid {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .contact-us .container-fluid h4 {
+        font-size: 22px;
+    }
+
+    .contact-us .container-fluid h5 {
+        font-size: 16px;
+    }
+
+    .contact-us P {
+        font-size: 13px;
+    }
+
+    .contact-us .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .contact-us .links i {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+}
