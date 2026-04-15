@@ -223,8 +223,14 @@ header main .introduction span{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
-}
+    flex: 1;
+    align-content: start;
 
+    
+}
+main, section, .page-content {
+    /* flex: 1; */
+}
 .course-card {
     background: #fff;
     padding: 20px;
