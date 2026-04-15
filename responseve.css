@@ -85,18 +85,8 @@
 
 @media (max-width: 768px) {
     header main.container {
-        height: auto;
+        height: calc(100vh - 160px);
         padding: 0 20px;
-        margin-top: 50px;
-    }
-    
-    header main.container{
-        justify-content: center;
-        align-items: center;
-
-    }
-    header main .introduction {
-        margin-top: 40px;
     }
 
     header main .introduction h4 {
@@ -288,10 +278,9 @@
         width: 100%;
         padding: 16px;
         border-radius: 20px;
-        
     }
 
-    .contact-us .container-fluid h4 {
+    .contact-us .cشntainer-fluid h4 {
         font-size: 28px;
     }
 
