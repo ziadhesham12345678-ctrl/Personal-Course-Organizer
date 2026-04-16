@@ -132,6 +132,12 @@
         margin: 2px 4px;
     }
 }
+@media (max-width: 350px) {
+    nav ul li {
+        font-size: 10px;
+        margin: 1px 2px;
+    }
+}
 
 
 /* ============ HOME PAGE (courses.html) ============ */
@@ -418,4 +424,21 @@
         font-size: 13px;
         padding: 8px 10px;
     }
+.form-box {
+    margin: 5px;
+}
+.form-box h2 {
+    font-size: 40px;
+}
+.course-table input {
+    width: 100%;
+}
+
+
+}
+
+@media (max-width: 350px) {
+    .form-box h2 {
+    font-size: 30px;
+}
 }

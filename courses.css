@@ -322,91 +322,103 @@ header main .introduction span{
         transform: scaleY(1);
     }
 }
-.add-course{
-    animation-name: slideFromLeft;
-    animation-duration: 1.5s;
-    animation-delay: .2;
-    display: grid;
-    grid-template-rows: auto;
-    padding: 40px 67px;
-}
-.add-course .containerr{
-    /* width: 500px; */
-    margin: 20px 30px;
-    height: 100%;
-    background-color:rgba(221, 221, 221, 0.6);
-    padding: 20px;
+.form-box {
+    background: rgba(255, 255, 255,.7);
+    padding: 25px;
     border-radius: 15px;
+    margin: 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideFromLeft 2s ;
+
 }
-.add-course .info{
-    display: flex;
-    flex-direction: column;
-}
-.name-course p{
-    font-size: 30px;
-    color: #d17070;
+
+/* العنوان */
+.form-box h2 {
+    text-align: center;
+    color: #E55556;
+    margin-bottom: 15px;
     font-family: "Architects Daughter", cursive;
-    text-decoration: underline;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
     white-space: nowrap;
+
+
 }
-.add-course button{
-    display: inline-block;
-    width: 120px;
-    margin-top: 20px;
-    padding: 5px 10px;
+
+/* التابل */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* الخلايا */
+.course-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+.course-table tr {
+    transition-duration: .5s;
+}
+/* 🔥 Hover على الصف */
+.course-table tr:not(:last-child):hover {
+    background-color: #ffe5e5;
+}
+
+/* اللابل */
+.course-table label {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #b13636;
+}
+
+/* الانبوت */
+.course-table input {
+    width: 60%;
+    padding: 6px;
+    color: #E55556;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+.course-table input::placeholder{
+    width: 100%;
+}
+
+.course-table input:focus::placeholder{
+    color: #c0392b;
+    padding: 5px;
+}
+
+/* فوكس */
+.course-table input:focus {
+    border-color: #E55556;
+    box-shadow: 0 0 5px #E55556;
+    outline: none;
+    scale: 1.03;
+}
+
+/* زرار */
+.course-table button {
     background-color: #E55556;
     color: white;
-    text-decoration: none;
-    border-radius: 30px; 
     border: none;
-    transition: .4s;
-}
-.add-course button:hover{
-    background-color: #b13636;
-    scale: 1.04;
-}
-
-.add-course input:focus::placeholder{
-    color: #E55556;
-}
-.add-course .containerr .info input{
-    padding: 5px;
-    margin: 10px 5px;
-    /* box-shadow: 0 4px 6px rgba(217, 113, 113, 0.461); */
-    color: #E55556;
-    border-radius: 13px;
-    border: #000 solid 1px;
-    outline: none;
-    box-sizing: border-box;
-    transition-duration: .4s ;
-    max-width: 100%;
-}
-.add-course .containerr input:focus{
-    border-color: #E55556;
-    outline: none;
-    scale: 1.07;
-    box-shadow: 0 4px 6px rgba(217, 113, 113, 0.461);
-
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.info .note input{
-    max-width: 100%;
-}
-.add-course .containerr h5{
-    letter-spacing: 1px;
-    font-size: 23px;
-    color: #E55556;
-    white-space: nowrap;
-}
-.add-course .containerr label{
-    font-size: 18px;
-    /* font-weight: 300; */
-    letter-spacing: 1px;
+/* Hover زرار */
+.course-table button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
 }
 
-input[type="radio"] {
-    accent-color: #E55556 !important;
+/* مكان الزرار */
+.btn-cell {
+    text-align: center;
 }
 .contact-us{
     display: grid;
@@ -444,18 +456,18 @@ input[type="radio"] {
         letter-spacing: 1px;
         color: #444;
         font-family: "Architects Daughter", cursive;
-        font-weight: 400;
+        font-weight: 600;
         font-style: normal;
         font-size: 25px;
 
 
 }
 .contact-us .container-fluid h4{
-    font-size: 40px;
+    font-size: 45px;
     letter-spacing: 1px;
     color: #e05c52;
     font-family: "Architects Daughter", cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 .contact-us .container-fluid p.test{
