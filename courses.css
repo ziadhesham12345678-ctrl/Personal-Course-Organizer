@@ -373,7 +373,7 @@ main, section, .page-content {
 .add-course .containerr .info input{
     padding: 5px;
     margin: 10px 5px;
-    box-shadow: 0 4px 6px rgba(217, 113, 113, 0.461);
+    /* box-shadow: 0 4px 6px rgba(217, 113, 113, 0.461); */
     color: #E55556;
     border-radius: 13px;
     border: #000 solid 1px;
