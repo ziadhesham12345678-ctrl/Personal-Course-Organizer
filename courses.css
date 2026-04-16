@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    /* height: calc(100vh - 90px);   */
+   height: ;
     display: flex;
     flex-direction: column;
 }
