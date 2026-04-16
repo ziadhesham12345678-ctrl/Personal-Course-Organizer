@@ -21,6 +21,10 @@
         margin: 0;
     }
 
+    .introduction h4 {
+        padding-top: 30px;
+    }
+
     nav ul li {
         margin: 3px 6px;
         padding: 0 0px;
@@ -29,6 +33,10 @@
 
     nav .container-fluid .space {
         display: none;
+    }
+
+    footer {
+        margin-top: 30px;
     }
 }
 
@@ -52,9 +60,6 @@
     nav ul li {
         margin: 0 5px;
     }
-
-    /* ✅ تم حذف background: #ce4646 — كان بيحط لون أحمر على الـ introduction */
-    /* ✅ تم حذف background-color: aqua — كان بيحط لون أزرق على الفوتر */
 
     footer {
         margin-top: 0;
@@ -110,11 +115,7 @@
         font-size: 16px;
     }
 
-    /* ✅ ده الحل الأساسي للسكرول — بيصغر الـ padding: 160px الكبير بتاع الـ home */
-    header main.container {
-        padding: 60px 20px;
-        min-height: auto;
-    }
+    /* ✅ امسحنا padding: 160px — الـ courses.css بيتحكم فيه دلوقتي */
 }
 
 @media (max-width: 480px) {
@@ -142,12 +143,7 @@
 }
 
 @media (max-width: 768px) {
-    /* ✅ padding أصغر علشان الفوتر ميبقاش بعيد تحت */
-    header main.container {
-        padding: 40px 20px;
-        min-height: auto;
-    }
-
+    /* ✅ امسحنا padding — courses.css بيتحكم فيه */
     header main .introduction h4 {
         font-size: 55px;
         padding: 12px 0;
@@ -165,12 +161,7 @@
 }
 
 @media (max-width: 480px) {
-    /* ✅ padding أصغر على الموبايل الصغير */
-    header main.container {
-        padding: 25px 15px;
-        min-height: auto;
-    }
-
+    /* ✅ امسحنا padding — courses.css بيتحكم فيه */
     header main .introduction h4 {
         font-size: 38px;
     }

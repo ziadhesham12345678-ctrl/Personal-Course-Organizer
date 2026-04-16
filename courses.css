@@ -18,7 +18,9 @@ body{
 }
 
 header{
-    height: auto;
+    /* height: calc(100vh - 100px);   */
+    display: flex;
+    flex-direction: column;
 }
 nav{
     background-color:rgba(255, 255, 255, 0.5);
@@ -144,12 +146,13 @@ transition-duration:.4s ;
     width: 100%;
 }
 header main.container{
+    padding: 20px; 
+    min-height: auto;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 300px;
-    padding: 160px 0;
+
 }
 header main .introduction{
     text-align: center;
