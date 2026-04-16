@@ -18,7 +18,6 @@ body{
 }
 
 header{
-   height: ;
     display: flex;
     flex-direction: column;
 }
@@ -226,14 +225,12 @@ header main .introduction span{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
-    flex: 1;
+    /* flex: 1; */
     align-content: start;
 
     
 }
-main, section, .page-content {
-    /* flex: 1; */
-}
+
 .course-card {
     background: #fff;
     padding: 20px;
@@ -330,7 +327,7 @@ main, section, .page-content {
     animation-duration: 1.5s;
     animation-delay: .2;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     padding: 40px 67px;
 }
 .add-course .containerr{
@@ -351,7 +348,7 @@ main, section, .page-content {
     color: #d17070;
     font-family: "Architects Daughter", cursive;
     text-decoration: underline;
-    animation-name: ;
+    white-space: nowrap;
 }
 .add-course button{
     display: inline-block;
@@ -400,6 +397,7 @@ main, section, .page-content {
     letter-spacing: 1px;
     font-size: 23px;
     color: #E55556;
+    white-space: nowrap;
 }
 .add-course .containerr label{
     font-size: 18px;
