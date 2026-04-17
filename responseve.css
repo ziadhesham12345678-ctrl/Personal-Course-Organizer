@@ -59,12 +59,10 @@
     nav ul li {
         margin: 0 5px;
     }
-body{
-    min-height: 90vh;
-}
+
 
     footer {
-        margin-top: auto;
+        margin-top: 0;
     }
 }
 
@@ -208,7 +206,6 @@ body{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 16px;
         padding: 16px;
-        /* background: #000; */
     }
 }
 
@@ -218,7 +215,8 @@ body{
         flex-direction: column;
         justify-content: center;
         justify-content: flex-start;
-        /* background: #000; */
+         flex: 1;
+    }
 
     .course-card {
         padding: 16px;
@@ -242,7 +240,14 @@ body{
     .cnotant-del p {
         font-size: 14px;
     }
-    
+    .form-box {
+        flex: 1; /* ← add course */
+    }
+
+    .contact-us {
+        flex: 1; /* ← contact us */
+    }
+}
 
 @media (max-width: 480px) {
     .my-courses {
@@ -340,11 +345,11 @@ body{
 
     }
     header main .introduction h4{
-        font-size: 60px;
+        font-size: 70px;
     }
     footer{
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top: auto;
 }
 
 
