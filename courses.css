@@ -18,8 +18,11 @@ body{
 }
 
 header{
-    display: flex;
-    flex-direction: column;
+    display:grid;
+    /* grid-template-rows: repeat(); */
+    gap: 100px;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
 }
 nav{
     background-color:rgba(255, 255, 255, 0.5);
@@ -79,7 +82,7 @@ footer{
     /* background: #982e2e; */
     text-align: center;
     margin-top: auto;
-    height: 100px;
+    /* height: 100px; */
     padding: 10px;
 }
 footer p{
@@ -144,16 +147,19 @@ transition-duration:.4s ;
 .links.active::after{
     width: 100%;
 }
-header main.container{
+header main.container1{
     padding: 20px; 
     min-height: auto;
     flex: 1;
+    /* margin: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #E55556; */
 
 }
 header main .introduction{
+    /* background-color: #732bc0; */
     text-align: center;
     margin-bottom: 50px;
     animation: slideFromLeft 2s ;
@@ -227,8 +233,7 @@ header main .introduction span{
     padding: 20px;
     /* flex: 1; */
     align-content: start;
-
-    
+    align-items: start;
 }
 
 .course-card {
@@ -237,6 +242,7 @@ header main .introduction span{
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: 0.3s;
+    height: fit-content;
 }
 
 .course-card:hover {
@@ -326,7 +332,7 @@ header main .introduction span{
     background: rgba(255, 255, 255,.7);
     padding: 25px;
     border-radius: 15px;
-    margin: 30px;
+    margin: 80px 160px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     animation: slideFromLeft 2s ;
 
@@ -422,7 +428,7 @@ header main .introduction span{
 }
 .contact-us{
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     padding: 40px 67px;
 }
 .contact-us .container-fluid{
